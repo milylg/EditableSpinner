@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--EditSpinner-->
+    <style name="Editable.Spinner.Style" parent="android:Widget.Holo.Light.EditText">
+        <!--对EditText属性预初始化或通过自定义属性设置-->
+        <item name="android:textDirection">locale</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">?attr/spinner_height_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/bg_popup_windows</item>
+        <item name="android:paddingStart">?attr/spinnerPaddingLeft</item>
+        <item name="android:paddingEnd">?attr/spinnerPaddingRight</item>
+        <item name="android:textColorHint">@color/light_black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">viewStart</item>
+        <!--华为手机光标问题解决-->
+        <item name="android:imeOptions">normal</item>
+    </style>
+</resources>

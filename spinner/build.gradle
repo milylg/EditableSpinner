@@ -1,0 +1,62 @@
+plugins {
+    id 'com.android.library'
+}
+
+def packageName() {
+    return "spinner"
+}
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    //数据绑定库与 Android Gradle 插件捆绑在一起。您无需声明对此库的依赖项，但必须启用它。
+    //如需启用数据绑定，请在模块的 build.gradle 文件中将 dataBinding 构建选项设置为 true
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+
+    android.libraryVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = packageName() + ".aar"
+        }
+
+        variant.assemble.doLast {
+            variant.outputs.all { output ->
+                def outputPath = "D:\\Documents\\AppProject\\LinkNote\\app\\libs"
+                copy {
+                    from outputFile
+                    into outputPath
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+}
+

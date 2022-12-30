@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Zen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">@color/blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+
+        <!-- Customize your theme here. -->
+        <item name="spinner_style">@style/Editable.Spinner.Style</item>
+        <item name="spinner_height_size">30dp</item>
+        <item name="dropdownOffset">10sp</item>
+        <item name="spinnerBgRadius">20dp</item>
+        <item name="spinnerPaddingLeft">12dp</item>
+        <item name="spinnerPaddingRight">4dp</item>
+        <item name="verticalPadding">2dp</item>
+        <!--去除ListPopWindow的阴影-->
+        <item name="listPopupWindowStyle">@style/listPopWindowStyle</item>
+    </style>
+
+    <style name="listPopWindowStyle">
+        <item name="android:popupElevation" tools:targetApi="lollipop">1dp</item>
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+</resources>

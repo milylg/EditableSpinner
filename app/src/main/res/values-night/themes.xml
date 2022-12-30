@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Zen" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">@color/blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+
+        <!-- Customize your theme here. -->
+        <!--        <item name="color_pressed">@color/orange</item>-->
+        <item name="spinner_style">@style/Editable.Spinner.Style</item>
+        <item name="spinner_height_size">30dp</item>
+        <item name="dropdownOffset">10sp</item>
+        <item name="spinnerBgRadius">10dp</item>
+        <item name="spinnerPaddingLeft">5dp</item>
+        <item name="verticalPadding">4dp</item>
+    </style>
+</resources>

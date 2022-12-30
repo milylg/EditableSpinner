@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <com.milylg.spinner.EditableSpinner
+        android:id="@+id/spinner_system_fit_offset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textColorHint="@color/light_black"
+        android:textColor="@color/black"
+        android:hint="@string/input_title"
+        android:text="Aiki"
+        android:textSize="16sp"
+        app:filterKeyVisible="true"
+        app:dropdownOffset="20dp"
+        app:arrowDrawableRight="@drawable/rotate_arrow_up" />
+
+    <EditText
+        android:id="@+id/edit_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spinner_system_fit_offset"
+        android:gravity="center_horizontal|top"
+        android:padding="12dp"
+        android:hint="write some words..."
+        android:textColorHint="@color/light_black"/>
+</RelativeLayout>

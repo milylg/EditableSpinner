@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--统一组合组件的风格样式-->
+    <attr name="spinner_style" format="reference" />
+    <attr name="spinner_height_size" format="dimension" />
+    <attr name="spinnerBgRadius" format="dimension" />
+    <!--这三个属性最好不删除，可以简化在EditText上设置    -->
+    <attr name="spinnerPaddingLeft" format="dimension" />
+    <attr name="spinnerPaddingRight" format="dimension"/>
+    <attr name="verticalPadding" format="dimension" />
+
+    <!--EditSpinner自定义风格样式-->
+    <declare-styleable name="editable_spinner">
+
+        <!--箭头图标的margin-->
+        <attr name="arrowMargin" format="dimension" />
+        <!--箭头图标的资源-->
+        <attr name="arrowDrawableLeft" format="reference" />
+        <attr name="arrowDrawableRight" format="reference" />
+        <attr name="symbolArrowSize" format="dimension"/>
+
+        <!--默认可选性内容-->
+        <attr name="entries" format="reference" />
+        <!--下拉框的下拉条目的背景-->
+        <attr name="dropdownBackground" format="reference" />
+        <!--输入下拉框在输入时是否显示筛选到的信息，默认true-->
+        <attr name="filterDataVisible" format="boolean" />
+        <!--输入下拉框显示筛选信息时，是否显示key为醒目的颜色，默认false-->
+        <attr name="filterKeyVisible" format="boolean" />
+        <!--弹出窗的动画样式-->
+        <attr name="popupAnimationStyle" format="reference" />
+        <!--弹窗向下偏移距离-->
+        <attr name="dropdownOffset" format="dimension" />
+    </declare-styleable>
+</resources>
